@@ -1,0 +1,464 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+    background: linear-gradient(to bottom, #ccff99 0%, #99ff66 100%);
+}
+
+/*cielo*/
+.cielo{
+  width: 100%;
+  height: 500px;
+  transform: translateZ(-2px);
+  background: linear-gradient(to bottom, #cc66ff 0%, #ffff66 100%);
+}
+
+/*sol*/
+
+.sol{
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 450px;
+  left: 850px;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  background: linear-gradient(to bottom, #ffff66 0%, #ffcc99 100%);
+}
+
+.sol_reflection_1{
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 509px;
+  left: 850px;
+  clip-path: polygon(100% 0, 69% 10%, 93% 12%, 76% 20%, 90% 29%, 14% 22%, 21% 13%, 0 8%, 21% 7%, 0 0);
+  background: linear-gradient(to bottom, #ffff66 0%, #ffcc99 100%);
+  z-index: 10;
+}
+
+.sol_reflection_2{
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 500px;
+  left: 850px;
+  clip-path: polygon(91% 0, 69% 8%, 81% 15%, 52% 14%, 60% 23%, 33% 24%, 38% 15%, 9% 11%, 28% 8%, 0 0);
+  background: linear-gradient(to bottom, #ffff66 0%, #ffcc99 100%);
+  z-index: 10;
+}
+
+/*mar*/
+
+.mar{
+  width: 100%;
+  height: 330px;
+  transform: translateZ(-2px);
+  position: absolute;
+  top: 500px;
+  background: linear-gradient(to bottom,  #ff9933 0%,  #cc66ff 100%);
+}
+
+.watchtowerA{
+  width: 35px;
+  height:120px;
+  position: absolute;
+  top: 380px;
+  left: 1500px;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  background-color: black;
+}
+
+.watchtowerB{
+  width: 35px;
+  height:25px;
+  position: absolute;
+  top: 360px;
+  left: 1499px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: black;
+}
+
+.ventana{
+  height: 20px;
+  width: 10px;
+  position: relative;
+  left: 1512px;
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffcc 100%);
+  top: -100px;
+}
+
+.puerta{
+  height: 30px;
+  width: 15px;
+  position: relative;
+  left: 1510px;
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffcc 100%);
+  top: -50px;
+}
+
+/*casa*/
+
+.traingle{
+  background-color: red;
+  width: 500px;
+  height: 150px;
+  position: relative;
+  left: 300px;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  top: 50px;
+}
+
+.square{
+  background-color: lightsalmon;
+  width: 460px;
+  height:300px;
+  position: relative;
+  left: 320px;
+  top:50px;
+  z-index:10;
+}
+
+
+
+.interior.ventana_1{
+  background: linear-gradient(to bottom, #ffffcc 46%, #ffffff 102%);
+  width: 60px;
+  height: 80px;
+  position: relative;
+  left: 451px;
+  top: -367px;
+  index: 10;
+}
+
+
+.interior.ventana_2{
+  background: linear-gradient(to bottom, #ffffcc 46%, #ffffff 102%);
+  width: 60px;
+  height: 80px;
+  position: relative;
+  left: 581px;
+  top: -447px;
+  index: 10;
+}
+
+.puerta_2{
+  background-color: brown;
+  width: 80px;
+  height: 130px;
+  position: relative;
+  left: 520px;
+  top: -240px;
+  z-index: 10;
+}
+
+.handle{
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: relative;
+  left: 8px;
+  top: 65px;
+  z-index: 10;
+}
+
+.ventana_1{
+  background: linear-gradient(to bottom, #ffffcc 14%, #ffff66 102%);
+  width: 100px;
+  height: 130px;
+  position: relative;
+  left: 50px;
+  top:50px;
+}
+
+.ventana_2{
+  background: linear-gradient(to bottom, #ffffcc 14%, #ffff66 102%);
+  width: 100px;
+  height: 130px;
+  position: relative;
+  left: 310px;
+  top:-80px;
+}
+
+.land{
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(to bottom, #ccff99 0%, #99ff66 100%);
+  position: relative;
+  bottom: 460px;
+}
+
+.chimenia{
+  height: 50px;
+  width: 20pX;
+  background-color: silver;
+  position: relative;
+  bottom: 1130px;
+  left: 425px;
+}
+
+/*flor*/
+
+.petalo{
+  position: relative;
+  height:20px;
+  width:20px;
+  background-color: #CE2FE5;
+  border-radius:26% 74% 0% 100% / 21% 100% 0% 79% ;
+}
+
+@keyframes flor{
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+
+#flor{
+  width: 10px;
+  height: 10px;
+  top: 950px;
+  left: 900px;
+  border-radius: 50%;
+  background-color: lightblue;
+  position: absolute;
+  animation: flor 2s infinite linear;
+  z-index:
+}
+
+  #p1{
+    position: relative;
+    left: -15px;
+    top: -15px;
+  }
+
+  #p2{
+  transform: rotate(-90deg);
+  left: -15px;
+  position: relative;
+  top: -15px;
+}
+
+#p3{
+  transform: rotate(-270deg);
+  position:relative;
+  left: 5px;
+  bottom: 55px;
+}
+
+#p4{
+  transform: rotate(180deg);
+  position:relative;
+  left: 5px;
+  bottom: 55px;
+}
+
+.boleta{
+  background-color: yellow;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+
+}
+
+.palo{
+  background-color: green;
+  height: 50px;
+  width: 3px;
+  left: 904px;
+  bottom: 780px;
+  position: relative;
+  z-index:10;
+}
+
+/* Smoke container */
+
+#smoke {
+	position: absolute;
+	z-index: 3;
+	width: 1px; height: 160px;
+	left: 50%; bottom: 30px;
+}
+
+/* smoke balls */
+
+#smoke span {
+  display: block;
+	position: absolute;
+	bottom: -35px; left: 50%; margin-left:-20px;
+	height: 0px; width: 0px;
+	border: 35px solid #4b4b4b;
+	border-radius: 35px;
+	left: -513px; opacity: 0;
+  bottom: 343px;
+	transform: scale(0.2);
+}
+
+/* Smoke animation */
+
+@keyframes smokeL {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(1) translate(-20px, -130px) }
+}
+
+@keyframes smokeR {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -5px) }
+	100% { opacity: 0; transform: scale(1) translate(20px, -130px) }
+}
+
+#smoke .s0 { animation: smokeL 10s 0s infinite }
+#smoke .s1 { animation: smokeR 10s 1s infinite }
+#smoke .s2 { animation: smokeL 10s 2s infinite }
+#smoke .s3 { animation: smokeR 10s 3s infinite }
+#smoke .s4 { animation: smokeL 10s 4s infinite }
+#smoke .s5 { animation: smokeR 10s 5s infinite }
+#smoke .s6 { animation: smokeL 10s 6s infinite }
+#smoke .s7 { animation: smokeR 10s 7s infinite }
+#smoke .s8 { animation: smokeL 10s 8s infinite }
+#smoke .s9 { animation: smokeR 10s 9s infinite }
+
+
+
+
+/*hot-air-balloon*/
+
+.hot-air-balloon {
+  position: absolute;
+  left: 50%;
+  margin-top: 250px;
+  margin-left: -10px;
+  animation: balloon infinite 3s 0.5s;
+  z-index: 10;
+    }
+
+  .balloon {
+    width: 70px;
+    height: 12px;
+    background: #d7608d;
+    border: 3px solid #b33e64;
+    border-radius: 3px;
+    position: absolute;
+    top: -42px;
+    left: 50%;
+    margin-left: -35px;
+      }
+
+    &:before {
+      content: "";
+      background: #d7608d;
+      width: 140px;
+      height: 160px;
+      position: absolute;
+      bottom: 26px;
+      left: 50%;
+      margin-left: -73px;
+      border-radius: 50%;
+      border: 3px solid  #b33e64;
+    }
+
+    &:after {
+      content: "";
+      background: #d7608d;
+      width: 80px;
+      height: 49px;
+      position: absolute;
+      bottom: 4px;
+      left: 50%;
+      margin-left: -43px;
+      transform: perspective(70px) rotateX(-40deg);
+      border: 3px solid  #b33e64;
+      border-top: 0;
+    }
+
+    span {
+      display: block;
+      width: 84px;
+      height: 174px;
+      background: #ffffff;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 12px;
+      z-index: 2;
+      border: 3px solid  #b33e64;
+      left: 50%;
+      margin-left: -45px;
+      box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.5);
+        }
+
+      &:after {
+        content: "";
+        display: block;
+        width: 28px;
+        height: 174px;
+        background: #d7608d;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -3px;
+        z-index: 2;
+        border: 3px solid #b33e64;
+        left: 50%;
+        margin-left: -17px;
+      }
+
+
+  .basket {
+    width: 20px;
+    height: 20px;
+    background: #d1c1a5;
+    border: 3px solid #b33e64;
+    border-radius: 3px;
+    position: relative;
+    box-shadow: 0 2px 4px transparentize(#b33e64;, 0.6);
+    }
+
+    &:before {
+      content: "";
+      width: 30px;
+      height: 6px;
+      background: $basket;
+      position: absolute;
+      top: -12px;
+      left: -8px;
+      border: 3px solid #b33e64;
+      border-radius: 3px;
+    }
+
+    &:after {
+      content: "";
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: -30px;
+      left: -2px;
+      transform: perspective(50px) rotateX(-40deg);
+      border: 2px solid #b33e64;
+    }
+
+
+@keyframes cloud {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes balloon {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
