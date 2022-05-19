@@ -1,0 +1,77 @@
+*{
+  margin:0;
+}
+
+body{
+  background-color: lightblue;
+}
+
+#cuerpo{
+  height: 470px;
+  width: 260px;
+  background-color: black;
+  margin: auto;
+  margin-top: 110px;
+  border-radius: 45px;
+  padding-top: 5px;
+}
+
+.rojo{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin:auto;
+  background-color: #DD7863;
+  margin-top: 30px;
+}
+
+.amarillo{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin:auto;
+  background-color: yellow;
+  position: absolute;
+  margin-top: 150px;
+  opacity: 1.0;
+}
+
+.verde{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin:auto;
+  background-color: #93D887;
+  position: absolute;
+  margin-top : 150px;
+  opacity: 1.0;
+}
+
+@media screen and (min-width: 1200px){
+  .rojo{
+    background-color:red;
+    opacity: 1.0;
+  }
+  .amarillo{
+    background-color: #E2ED98;
+  }
+}
+@media screen and (max-width: 767px){
+  .verde{
+    background-color: green;
+    opacity: 1.0;
+  }
+  .amarillo{
+    background-color: #E2ED98;
+  }
+}
+
+#palito{
+  height: 500px;
+  width: 25px;
+  background-color: black;
+  margin: auto;
+  margin-top: 280px;
+
+
+}
