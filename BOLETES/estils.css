@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding:0;
+}
+
+body{
+  background-color: pink;
+}
+
+#contenidor{
+  width:800px;
+  height:400px;
+  background-color: #E76F52;
+  margin: 0 auto;
+}
+
+#cabecera{
+  padding: 30px;
+}
+
+#menu{
+  width:480px;
+  margin: 0 auto;
+}
+
+.boletas{
+  width:100px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 50px;
+  float:left;
+  margin-right: 20px;
+}
+
+.boletas:hover{
+  opacity: 50%;
+}
+
+#uno{
+  background-color: red;
+}
+
+#dos{
+  background-color: yellow;
+}
+
+#tres{
+  background-color: blue;
+}
+
+#cuatro{
+  background-color: green;
+}
+
+
+.izq{
+  width: 340px;
+  background-color: #AF7AC5 ;
+  height: 400px;
+  float: left;
+  padding: 30px;
+  margin: 0 auto;
+  background-image: url(img/trees.jpeg);
+  background-size: cover;
+}
+
+.der{
+  width: 340px;
+  background-color: #60DD9A;
+  height: 400px;
+  float: right;
+  padding: 30px;
+  margin: 0 auto;
+  background-image: url(img/purple.jpeg);
+  background-size: cover;
+}
+
+#footer{
+  height: 100px;
+  background-color: #4398E0;
+  clear: both;
+}
+
+ul{
+  list-style-type: none;
+  width: 400px;
+  margin: 0 auto;
+}
+
+li a{
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  float:left;
+  text-align: center;
+}
+
+li a:hover{
+  background-color: white;
+  color: black;
+}
+
+p{
+  text-align: center;
+  font-weight: bold;
+  font-family: arial;
+  font-size: 50px;
+  line-height: 100px;
+}
