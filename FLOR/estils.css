@@ -1,0 +1,89 @@
+*{
+  margin:0px;
+}
+body{
+  background-color: pink;
+}
+
+.petalo{
+  position: relative;
+  height:200px;
+  width:200px;
+  background-color: #CE2FE5;
+  border-radius:26% 74% 0% 100% / 21% 100% 0% 79% ;
+}
+
+@keyframes flor{
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+
+#flor{
+  width: 40px;
+  height: 40px;
+  top: 200px;
+  left: 732px;
+  border-radius: 50%;
+  background-color: lightblue;
+  position: absolute;
+  animation: flor 2s infinite linear;
+  z-index: 1;
+
+}
+
+  #p1{
+    position: relative;
+    left: -176px;
+    top: -176px;
+  }
+
+  #p2{
+  transform: rotate(-90deg);
+  left: -176px;
+  position: relative;
+  top: -176px;
+}
+
+#p3{
+  transform: rotate(-270deg);
+  position:relative;
+  left: 24px;
+  bottom: 570px;
+}
+
+#p4{
+  transform: rotate(180deg);
+  position:relative;
+  left: 24px;
+  bottom: 570px;
+}
+
+.boleta{
+  background-color: yellow;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top:0px;
+  position: absolute;
+
+}
+
+.palo{
+  background-color: green;
+  height: 595px;
+  width: 20px;
+  left: 742px;
+  top:240px;
+  position: absolute;
+  z-index:-1;
+}
+
+
+.gespa{
+  background-color: lightgreen;
+  position: absolute;
+  height: 400px;
+  width: 100%;
+  top: 620px;
+}
